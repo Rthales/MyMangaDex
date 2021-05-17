@@ -108,7 +108,7 @@ class MyMangaDex {
 		}
 		let data = await browser.runtime.sendMessage({
 			action: 'fetch',
-			url: `https://myanimelist.net/ownlist/manga/${manga.myAnimeListId}/edit?hideLayout`,
+			url: `https://myanimelist.net/ownlist/manga/${manga.myAnimeListId}/edit?hideLayout&key=dV3NQoszbqzA3uuJVgCmGHsnxv`,
 			options: {
 				method: 'GET',
 				cache: 'no-cache',
@@ -293,6 +293,7 @@ class MyMangaDex {
 					redirect: 'follow',
 					credentials: 'include',
 					headers: {
+						'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
 						'Content-Type': 'application/x-www-form-urlencoded',
 						accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
 					},

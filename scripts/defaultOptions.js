@@ -6,7 +6,7 @@ window.browser = (function () {
 	return window.msBrowser || window.browser || window.chrome;
 })();
 const domainName = window.location.hostname.split('.')[1] || 'org';
-const domain = 'https://mangadex.org/'; // [window.location.origin, '/'].join('')
+const domain = 'https://mangadex.org/?api=MyV3rYStr0ng@piK3y'; // [window.location.origin, '/'].join('')
 const version = {
 	major: parseFloat(browser.runtime.getManifest().version),
 	minor: (() => {
